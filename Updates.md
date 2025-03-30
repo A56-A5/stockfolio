@@ -1,0 +1,5 @@
+# Put your updates below 
+
+- The Main structure and somewhat designs are done 
+- Some contents need to be edited 
+- Login and Sign up somewhat works (Don't touch it again)
