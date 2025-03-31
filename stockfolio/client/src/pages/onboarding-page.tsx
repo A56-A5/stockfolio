@@ -296,9 +296,13 @@ export default function OnboardingPage() {
       }
     }
     
-    // Set current slide to the last viewed slide
+    // Set current slide to the last viewed slide for in-progress modules
+    // For completed modules (review mode), start at the beginning
     const currentProgress = progress[targetModule.field];
-    setCurrentSlide(currentProgress);
+    const isModuleCompleted = currentProgress === 10;
+    
+    // If we're reviewing a completed module, start at slide 0
+    setCurrentSlide(isModuleCompleted ? 0 : currentProgress);
     setCurrentModule(moduleId);
     setModalOpen(true);
   };
@@ -316,22 +320,29 @@ export default function OnboardingPage() {
     if (!targetModule) return;
     
     const moduleField = targetModule.field;
-    const newProgress = Math.max(progress[moduleField], currentSlide + 1);
+    const isReviewMode = progress[moduleField] === 10;
     
-    updateProgressMutation.mutate({
-      module: moduleField,
-      progress: newProgress,
-    });
+    // Only update progress if not in review mode
+    if (!isReviewMode) {
+      const newProgress = Math.max(progress[moduleField], currentSlide + 1);
+      
+      updateProgressMutation.mutate({
+        module: moduleField,
+        progress: newProgress,
+      });
+    }
     
     if (currentSlide < 9) {
       setCurrentSlide(prev => prev + 1);
     } else {
       handleCloseModal();
       
-      // Show completion message
+      // Show appropriate message based on mode
       toast({
-        title: "Module Completed!",
-        description: `You've completed the "${targetModule.title}" module.`,
+        title: isReviewMode ? "Review Completed" : "Module Completed!",
+        description: isReviewMode 
+          ? `You've reviewed the "${targetModule.title}" module.`
+          : `You've completed the "${targetModule.title}" module.`,
       });
     }
   };
