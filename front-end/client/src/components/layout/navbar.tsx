@@ -38,8 +38,8 @@ export default function Navbar() {
                     <Button variant="ghost">Continue Onboarding</Button>
                   </Link>
                 )}
-                <Link href={user.onboardingCompleted ? "/dashboard" : "/onboarding"}>
-                  <Button>Dashboard</Button>
+                <Link href={user.onboardingCompleted ? "#"  : "/onboarding"}>
+                  <Button onClick={() => {window.location.href = "http://localhost:3000";}} >Dashboard</Button>
                 </Link>
               </div>
             ) : (
@@ -70,8 +70,8 @@ export default function Navbar() {
             
             {user ? (
               <div className="flex flex-col space-y-2 pt-2">
-                <Link href={user.onboardingCompleted ? "/dashboard" : "/onboarding"}>
-                  <Button className="w-full">Dashboard</Button>
+                <Link href={user.onboardingCompleted ? "/" : "/onboarding"}>
+                  <Button onClick={() => {window.location.href = "http://localhost:3000";}} className="w-full">Dashboard</Button>
                 </Link>
                 <Button 
                   variant="outline" 
