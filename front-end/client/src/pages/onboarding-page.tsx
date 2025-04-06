@@ -259,7 +259,7 @@ export default function OnboardingPage() {
         
         // Give a moment to show the toast
         setTimeout(() => {
-          navigate("/dashboard");
+          window.location.href = "http://localhost:3000";
         }, 2000);
       }
     },
