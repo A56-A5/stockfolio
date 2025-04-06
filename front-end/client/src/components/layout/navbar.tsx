@@ -25,6 +25,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink href="/" active={location === "/"}>Home</NavLink>
             <NavLink href="/about" active={location === "/about"}>About</NavLink>
+            <NavLink href="/stocklet" active={location === "/stocklet"}>Stocklet</NavLink>
             
             {user ? (
               <div className="flex items-center space-x-4">

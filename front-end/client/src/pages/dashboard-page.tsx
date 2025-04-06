@@ -290,7 +290,7 @@ export default function DashboardPage() {
                       <div key={index} className="h-12 bg-gray-100 animate-pulse rounded-lg"></div>
                     ))
                   ) : (
-                    marketData?.topGainers.map((stock, index) => (
+                    marketData?.topGainers.map((stock: stock, index) => (
                       <div 
                         key={index} 
                         className="flex justify-between items-center p-2 hover:bg-gray-50 rounded-lg cursor-pointer"

@@ -9,7 +9,7 @@ export default function AboutPage() {
     {
       name: "Minhaj Noushad",
       role: "Tech Lead",
-      bio: "Who once thought 'debugging' meant removing insects from his laptop. Still occasionally tries to fix code errors by restarting his computer.",
+      bio: "Who is suffering from existensial crisis when his model gave less accuracy than random guessing.",
       imageUrl: `https://randomuser.me/api/portraits/men/42.jpg`
     },
     {

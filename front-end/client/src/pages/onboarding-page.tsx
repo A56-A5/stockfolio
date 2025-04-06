@@ -61,7 +61,7 @@ const moduleData = [
   },
   {
     id: 2,
-    title: "Financial Stability",
+    title: "Basics of Investing",
     description: "Understand how to build a solid financial foundation before investing in stocks.",
     imageUrl: "https://images.unsplash.com/photo-1579621970590-9d624316904b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
     slides: [
