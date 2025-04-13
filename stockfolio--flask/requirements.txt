@@ -1,4 +1,0 @@
-flask==3.0.0
-yfinance==0.2.36
-pandas==2.1.4
-matplotlib==3.8.2
