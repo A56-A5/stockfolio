@@ -7,7 +7,6 @@ StockFolio is a stock market educational and prediction platform designed to mak
 
 - 📚 Interactive Learning Modules to teach the basics of finance, investing, and avoiding scams.
 - 📊 Real-time Stock Dashboard with MA100 & MA200 visualizations.
-- 🤖 Simple ML-based Stock Price Prediction Model (integrated via Streamlit backend).
 - 🌐 React Frontend with secure login and progress tracking.
 - 🔒 Learning module completion gate before dashboard access.
 - 🌱 Focused on SDG Goal 1: No Poverty.
@@ -41,12 +40,32 @@ StockFolio is a stock market educational and prediction platform designed to mak
 ## 🛠️ Tech Stack
 
 - **Frontend:** React.js, Tailwind CSS
-- **Backend:** Streamlit (for ML model and dashboard)
-- **ML Model:** Simple LSTM-based stock predictor
+- **Backend:** Flask
 - **Authentication:** Basic login flow (can be expanded with Firebase/Auth0)
 - **Hosting:** Localhost / Streamlit Cloud / Vercel
 
+## 🚀 How to Run the Project
 
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+# Start the frontend (React)
+```
+cd frontend
+npm install
+npm run dev
+```
+
+# In a new terminal, start the backend (Flask)
+
+```
+cd backend
+pip install -r requirements.txt
+python app.py
+```
 
 
 ## 👥 Contributors
