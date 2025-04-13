@@ -10,21 +10,26 @@ StockFolio is a stock market educational and prediction platform designed to mak
 - 🤖 Simple ML-based Stock Price Prediction Model (integrated via Streamlit backend).
 - 🌐 React Frontend with secure login and progress tracking.
 - 🔒 Learning module completion gate before dashboard access.
-- 🌱 Focused on SDG Goal 4: Quality Education.
+- 🌱 Focused on SDG Goal 1: No Poverty.
 
 ## 🖼️ UI Preview
 
 ### 🏠 Homepage
 
-![Home Page](./assets/homepage.png)
+![Home Page](./images/home.png)
 
 ### 📚 Learning Modules
 
-![Learning Modules](./assets/learning.png)
+![Learning Modules](./images/onboarding.png)
 
 ### 📊 Dashboard - MA 100 & MA 200
 
-![Dashboard](./assets/dashboard.png)
+![Dashboard](./images/dashboard.png)
+
+### 🤖 AI Chatbot
+
+![AI Chatbot](./images/bot.png)
+
 
 ## 🧠 How It Works
 
@@ -41,10 +46,14 @@ StockFolio is a stock market educational and prediction platform designed to mak
 - **Authentication:** Basic login flow (can be expanded with Firebase/Auth0)
 - **Hosting:** Localhost / Streamlit Cloud / Vercel
 
-## 📌 Note for Expo
 
-This project is built with the goal of spreading financial literacy and enabling safer stock market access. It's beginner-friendly, cleanly designed, and centered around SDG Goal 4: Quality Education.
 
----
 
-> Made with ❤️ by [Your Team Name]
+## 👥 Contributors
+
+This project is built with the goal of spreading financial literacy and enabling safer stock market access. It's beginner-friendly, cleanly designed, and centered around **SDG Goal 1: No Poverty**.
+
+- Alvi A V  
+- Minhaj Noushad  
+- John Antony
+
